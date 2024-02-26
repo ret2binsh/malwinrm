@@ -95,6 +95,7 @@ func (c *ClientKerberos) Post(clt *Client, request *soap.SoapMessage) (string, e
 	//nolint:noctx
 	winRMRequest, _ := http.NewRequest("POST", winrmURL, strings.NewReader(request.String()))
 	winRMRequest.Header.Add("Content-Type", "application/soap+xml;charset=UTF-8")
+	winRMRequest.Header.Set("User-Agent", "Microsoft WinRM Client")
 
 	err = spnego.SetSPNEGOHeader(kerberosClient, winRMRequest, c.SPN)
 	if err != nil {
