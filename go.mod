@@ -1,4 +1,4 @@
-module github.com/masterzen/winrm
+module github.com/ret2binsh/winrm
 
 go 1.21
 
@@ -7,13 +7,14 @@ require (
 	github.com/ChrisTrenkamp/goxpath v0.0.0-20210404020558-97928f7e12b6
 	github.com/bodgit/ntlmssp v0.0.0-20231122144230-2b2bca29f22b
 	github.com/gofrs/uuid v4.4.0+incompatible
-	github.com/google/go-cmp v0.6.0 // indirect
 	github.com/jcmturner/gokrb5/v8 v8.4.4
 	github.com/kr/pretty v0.1.0 // indirect
 	github.com/masterzen/simplexml v0.0.0-20190410153822-31eea3082786
 	golang.org/x/text v0.14.0
 	gopkg.in/check.v1 v1.0.0-20180628173108-788fd7840127
 )
+
+require github.com/masterzen/winrm v0.0.0-20231227165926-e811dad5ac77
 
 require (
 	github.com/bodgit/windows v1.0.1 // indirect
