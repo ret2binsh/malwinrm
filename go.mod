@@ -1,4 +1,4 @@
-module github.com/ret2binsh/winrm
+module github.com/ret2binsh/malwinrm
 
 go 1.21.0
 
